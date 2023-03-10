@@ -26,6 +26,16 @@ spec:
                 name: kubernetes-exercise-frontend
                 port:
                   number: 80
+    - host: kubernetes-exercise-api.gatherloop.co
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: kubernetes-exercise-backend
+                port:
+                  number: 80
     - host: gatherloop.co
       http:
         paths:
