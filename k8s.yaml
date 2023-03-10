@@ -25,4 +25,4 @@ spec:
               service:
                 name: gatherloop-landing-page-service
                 port:
-                  number: 5001
+                  number: 80
