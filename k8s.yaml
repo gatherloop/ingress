@@ -16,6 +16,16 @@ spec:
                 name: kubernetes-bootcamp
                 port:
                   number: 8080
+    - host: kubernetes-exercise.gatherloop.co
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: kubernetes-exercise-frontend
+                port:
+                  number: 80
     - host: gatherloop.co
       http:
         paths:
